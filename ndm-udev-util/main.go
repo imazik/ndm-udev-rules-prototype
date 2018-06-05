@@ -10,7 +10,7 @@ import (
 )
 
 const (
-	url    = "http://localhost:8080/diskevent"
+	url = "http://localhost:8080/diskevent"
 )
 
 func main() {

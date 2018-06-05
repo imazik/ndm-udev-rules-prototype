@@ -1,2 +1,2 @@
 ACTION=="add", KERNEL=="sd[a-z]", RUN+="/bin/ndm-udev-util POST Serial=%E{ID_SERIAL_SHORT} Vendor=%E{ID_VENDOR} Model=%E{ID_MODEL}"
-ACTION=="remove", KERNEL=="sd[a-z]", RUN+="/bin/ndm-udev-util DELETE Serial=%E{ID_SERIAL_SHORT} Vendor=%E{ID_VENDOR} Model=%E{ID_MODEL}"
+ACTION=="remove", KERNEL=="sd[a-z]" ,RUN+="/bin/ndm-udev-util DELETE Serial=%E{ID_SERIAL_SHORT} Vendor=%E{ID_VENDOR} Model=%E{ID_MODEL}"
